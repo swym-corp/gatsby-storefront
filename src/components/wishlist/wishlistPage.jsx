@@ -85,7 +85,7 @@ export default function WishlistPage() {
                         <p className="wishlist-heading-sub-text">Wishlisted Products will be added here.</p>
                     </div>
                     <div className="swym-wishlist-page-actions">
-                        {userAuthenticated && <button className="swym-share-btn" onClick={() => { setshowShareList(true) }}>Share List</button>}
+                        {userAuthenticated && savedLists.length > 0 && <button className="swym-share-btn" onClick={() => { setshowShareList(true) }}>Share List</button>}
                         {savedLists.length > 0 &&
                             <Dropdown lists={savedLists} selectedListName={selectedListName} onListChange={onListChange} />
                         }

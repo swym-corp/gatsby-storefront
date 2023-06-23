@@ -6,5 +6,5 @@
 */
 
 export const getAuthToken = () => {
-    return Buffer.from(`${process.env.SWYM_PID}:${process.env.SWYM_REST_API_KEY}`).toString('base64')
+  return Buffer.from(`${process.env.GATSBY_SWYM_PID}:${process.env.SWYM_REST_API_KEY}`).toString('base64')
 }
