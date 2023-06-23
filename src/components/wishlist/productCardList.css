@@ -1,0 +1,71 @@
+.listingContainerStyle {
+    display: grid;
+    grid-template-columns: var(--product-grid);
+    place-items: center;
+    gap: var(--size-gutter-raw);
+    padding: 0 var(--size-gutter-raw);
+}
+
+.productCardStyle {
+    max-width: 400px;
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: var(--space-md);
+}
+
+.productImageStyle {
+    position: relative;
+    margin-bottom: var(--space-md);
+}
+
+.productDetailsStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--semibold);
+}
+
+.productVendorStyle {
+    font-size: var(--text-sm);
+    color: var(--text-color-secondary);
+}
+
+.productHeadingStyle {
+    width: 100%;
+    font-size: var(--text-lg);
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: var(--dense);
+}
+
+.productPrice {
+    color: var(--text-color-secondary);
+}
+
+.addToCartStyle {
+    display: block;
+    gap: var(--space-lg);
+    margin-top: 0.4rem;
+}
+
+.remove-wishlist-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    color: white;
+}
+
+.cross-svg {
+    transition: transform 0.3s ease;
+}
+
+.remove-wishlist-icon:hover .cross-svg {
+    transform: scale(1.2);
+}

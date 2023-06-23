@@ -1,0 +1,49 @@
+.registerSection {
+    padding: 3rem;
+}
+
+.registerHeading {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.registerForm {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.registerInput {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+.registerButton {
+    width: 100px;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registerButton:hover {
+    box-shadow: var(--shadow);
+}
+
+@media only screen and (min-width: 769px) {
+    .registerForm {
+        width: 50%;
+    }
+}
+
+.registerMessage {
+    margin-top: 1rem;
+    color: var(--primary);
+}
