@@ -57,11 +57,11 @@ export function ProductCard({ product, eager }) {
 
   const hasImage = firstImage || Object.getOwnPropertyNames(storefrontImageData || {}).length
 
-  const getProductId = () => {
+  const getProductId = React.useCallback(() => {
     if (product?.storefrontId) {
       return product?.storefrontId.split('Product/')[1];
     }
-  };
+  }, [product]);
 
   const getProductVariantId = () => {
     const variant = product && product.variants && product.variants.length > 0 ? product.variants[0] : null
@@ -75,7 +75,9 @@ export function ProductCard({ product, eager }) {
     setshowCreateListPopup(true);
   };
 
-  const isWishlisted = (savedListItems.filter(e => (e.empi === Number(getProductId()))).length > 0)
+  const isWishlisted = React.useMemo(() => {
+    return savedListItems.filter(e => e.empi === Number(getProductId())).length > 0;
+  }, [savedListItems, getProductId]);
 
   React.useEffect(() => {
     setshowAlertBox(false)
