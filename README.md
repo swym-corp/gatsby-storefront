@@ -51,7 +51,7 @@ npm run serve
 Here are some docs which will be helpful in the implementation
 
 - <a href="https://www.gatsbyjs.com/docs/building-an-ecommerce-site-with-shopify/" target="_blank">Getting started with Gatsby</a>
-- <a href="https://swym-corp.github.io/codelabs/gatsby/wishlist/#0" target="_blank">Setting up swym wishlist code for the hydrogen store</a>
+- <a href="https://swym-corp.github.io/codelabs/gatsby/wishlist/#0" target="_blank">Setting up swym wishlist code for the gatsby store</a>
 
 ## Deployment 
 - We have deployed our demo gatsby store using gatsby cloud
