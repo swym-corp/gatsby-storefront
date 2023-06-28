@@ -13,7 +13,7 @@
 
 [Check out our API Docs](https://developers.swym.it/)
 
-[Here's a demo store with Swym Wishlist already setup]()
+[Here's a demo store with Swym Wishlist already setup](https://swymgatsbystorefront.gatsbyjs.io/)
 
 ## Getting started
 
