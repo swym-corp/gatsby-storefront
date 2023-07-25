@@ -46,7 +46,7 @@ npm run build
 npm run serve
 ```
 
-## Getting started with the swym wishlisht implementation on hydrogen
+## Getting started with the swym wishlisht implementation on gatsby
 
 Here are some docs which will be helpful in the implementation
 
